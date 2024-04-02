@@ -19,7 +19,6 @@ void selectMeal(BuildContext context,  Meal meal) {
     MaterialPageRoute(
       builder: (ctx) => MealDetailsScreen(
         meal: meal,
-        onTogglefavorite: onTogglefavorite,
            ),
        ),
       );
