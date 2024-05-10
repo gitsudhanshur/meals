@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class MealItemtrait extends StatelessWidget {
-  const MealItemtrait({
+class MealItemTrait extends StatelessWidget {
+  const MealItemTrait({
     super.key,
     required this.icon,
     required this.label,
@@ -13,19 +13,18 @@ class MealItemtrait extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(children: [
-     Icon(
-      icon,
-      size: 16,
-      color: Colors.white,
+      Icon(
+        icon,
+        size: 17,
+        color: Colors.white,
       ),
-      const SizedBox(width: 7),
+      const SizedBox(width: 6),
       Text(
         label,
         style: const TextStyle(
           color: Colors.white,
         ),
       ),
-    ],
-    );
+    ]);
   }
 }

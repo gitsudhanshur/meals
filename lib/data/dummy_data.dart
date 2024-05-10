@@ -8,13 +8,13 @@ const availableCategories = [
   Category(
     id: 'c1',
     title: 'Italian',
-    color: Color.fromARGB(255, 219, 232, 68),
+    color: Colors.purple,
   ),
   Category(
     id: 'c2',
     title: 'Quick & Easy',
     color: Colors.red,
-  ), 
+  ),
   Category(
     id: 'c3',
     title: 'Hamburgers',
@@ -69,7 +69,7 @@ const dummyMeals = [
     complexity: Complexity.simple,
     imageUrl:
         'https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Spaghetti_Bolognese_mit_Parmesan_oder_Grana_Padano.jpg/800px-Spaghetti_Bolognese_mit_Parmesan_oder_Grana_Padano.jpg',
-    duration: 15,
+    duration: 20,
     ingredients: [
       '4 Tomatoes',
       '1 Tablespoon of Olive Oil',
@@ -99,10 +99,10 @@ const dummyMeals = [
     ],
     title: 'Toast Hawaii',
     affordability: Affordability.affordable,
-    complexity: Complexity.hard,
+    complexity: Complexity.simple,
     imageUrl:
         'https://cdn.pixabay.com/photo/2018/07/11/21/51/toast-3532016_1280.jpg',
-    duration: 5,
+    duration: 10,
     ingredients: [
       '1 Slice White Bread',
       '1 Slice Ham',
@@ -131,7 +131,7 @@ const dummyMeals = [
     complexity: Complexity.simple,
     imageUrl:
         'https://cdn.pixabay.com/photo/2014/10/23/18/05/burger-500054_1280.jpg',
-    duration: 30,
+    duration: 45,
     ingredients: [
       '300g Cattle Hack',
       '1 Tomato',
@@ -162,7 +162,7 @@ const dummyMeals = [
     complexity: Complexity.challenging,
     imageUrl:
         'https://cdn.pixabay.com/photo/2018/03/31/19/29/schnitzel-3279045_1280.jpg',
-    duration: 50,
+    duration: 60,
     ingredients: [
       '8 Veal Cutlets',
       '4 Eggs',
@@ -234,7 +234,7 @@ const dummyMeals = [
     complexity: Complexity.hard,
     imageUrl:
         'https://cdn.pixabay.com/photo/2017/05/01/05/18/pastry-2274750_1280.jpg',
-    duration: 230,
+    duration: 240,
     ingredients: [
       '4 Sheets of Gelatine',
       '150ml Orange Juice',
@@ -269,7 +269,7 @@ const dummyMeals = [
     complexity: Complexity.simple,
     imageUrl:
         'https://cdn.pixabay.com/photo/2018/07/10/21/23/pancake-3529653_1280.jpg',
-    duration: 15,
+    duration: 20,
     ingredients: [
       '1 1/2 Cups all-purpose Flour',
       '3 1/2 Teaspoons Baking Powder',
@@ -300,7 +300,7 @@ const dummyMeals = [
     complexity: Complexity.challenging,
     imageUrl:
         'https://cdn.pixabay.com/photo/2018/06/18/16/05/indian-food-3482749_1280.jpg',
-    duration: 40,
+    duration: 35,
     ingredients: [
       '4 Chicken Breasts',
       '1 Onion',
@@ -384,7 +384,7 @@ const dummyMeals = [
     complexity: Complexity.simple,
     imageUrl:
         'https://cdn.pixabay.com/photo/2018/04/09/18/26/asparagus-3304997_1280.jpg',
-    duration: 25,
+    duration: 30,
     ingredients: [
       'White and Green Asparagus',
       '30g Pine Nuts',

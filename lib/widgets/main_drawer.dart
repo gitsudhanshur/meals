@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 
 class MainDrawer extends StatelessWidget {
-  const MainDrawer({
-    super.key,
-    required this.onSelectScreen,
-  });
+  const MainDrawer({super.key, required this.onSelectScreen});
 
   final void Function(String identifier) onSelectScreen;
 
@@ -14,7 +11,7 @@ class MainDrawer extends StatelessWidget {
       child: Column(
         children: [
           DrawerHeader(
-            padding: const EdgeInsets.all(19),
+            padding: const EdgeInsets.all(20),
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 colors: [
@@ -22,7 +19,7 @@ class MainDrawer extends StatelessWidget {
                   Theme.of(context)
                       .colorScheme
                       .primaryContainer
-                      .withOpacity(0.7),
+                      .withOpacity(0.8),
                 ],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
@@ -32,13 +29,13 @@ class MainDrawer extends StatelessWidget {
               children: [
                 Icon(
                   Icons.fastfood,
-                  size: 50,
+                  size: 48,
                   color: Theme.of(context).colorScheme.primary,
                 ),
-                const SizedBox(width: 20),
+                const SizedBox(width: 18),
                 Text(
-                  'Cooking up...',
-                  style: Theme.of(context).textTheme.headline5!.copyWith(
+                  'Cooking Up!',
+                  style: Theme.of(context).textTheme.titleLarge!.copyWith(
                         color: Theme.of(context).colorScheme.primary,
                       ),
                 ),
@@ -48,13 +45,14 @@ class MainDrawer extends StatelessWidget {
           ListTile(
             leading: Icon(
               Icons.restaurant,
-              size: 25,
+              size: 26,
               color: Theme.of(context).colorScheme.onBackground,
             ),
             title: Text(
               'Meals',
-              style: Theme.of(context).textTheme.headline6!.copyWith(
+              style: Theme.of(context).textTheme.titleSmall!.copyWith(
                     color: Theme.of(context).colorScheme.onBackground,
+                    fontSize: 24,
                   ),
             ),
             onTap: () {
@@ -64,13 +62,14 @@ class MainDrawer extends StatelessWidget {
           ListTile(
             leading: Icon(
               Icons.settings,
-              size: 25,
+              size: 26,
               color: Theme.of(context).colorScheme.onBackground,
             ),
             title: Text(
               'Filters',
-              style: Theme.of(context).textTheme.headline6!.copyWith(
+              style: Theme.of(context).textTheme.titleSmall!.copyWith(
                     color: Theme.of(context).colorScheme.onBackground,
+                    fontSize: 24,
                   ),
             ),
             onTap: () {
